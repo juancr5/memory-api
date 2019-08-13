@@ -21,6 +21,8 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 
 3. Haga uso de la herramienta ```valgrind``` en el programa empleado en los puntos anteriores. Se usará la herramienta ```memcheck``` que es parte de ```valgrind``` para analizar lo que pasa: ``` valgrind --leak-check=yes null```. ¿Qué pasa cuando corre esto?, Â¿Puede usted interpretar la salida de la herramienta anterior?
 
+-en este caso podemos observar la herramienta memcheck detectó una escritura inválida de tamaño 4 byte en la línea 8 del archivo 
+
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/03%20valgrind%20memcheck.png)
 
 4. Escriba un programa sencillo que asigne memoria usando ```malloc()``` pero olvide liberarla antes de que el programa termina. ¿Qué pasa cuando este programa se ejecuta?, ¿Puede usted usar gdb para encontrar problemas como este?, ¿Que dice acerca de Valgrind (de nuevo use este con la bandera ```--leak check=yes```)?
