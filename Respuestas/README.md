@@ -36,6 +36,15 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 
 -Al usar el GDB la salida fue la siguiente:
 
+![alt tag]()
+
+-En donde se presento un problema de segmentacion en ../stdlib/strtol_l.c:293
+
+-Al usar la bandera ```--leak check=yes``` se presenta lo siguiente: 
+
+![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/04%20tool.png)
+
+
 
 5. Escriba un programa que cree un array de enteros llamado data de un tamaño de 100 usando ```malloc```; entonces, lleve el ```data[100]``` a ```0```. ¿Qué pasa cuando este programa se ejecuta?, ¿Qué pasa cuando se corre el programa usando ```valgrind```?, ¿El programa es correcto?
 
