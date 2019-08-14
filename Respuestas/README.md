@@ -7,7 +7,7 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 1. Escriba un programa simple llamado ```null.c``` que cree un puntero a un entero, llevelo a null y entonces intente desreferenciarlo (esto es, asignarle un valor). Compile este programa llamado ```null```. ¿Qué pasa cuando usted ejecuta este programa?.
 
 - El codigo es el siguiente: [null.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/null.c)
-- al ejecutar null.c la salida presentada fue:
+- Al ejecutar null.c la salida presentada fue:
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/01%20null.c.png)
 
@@ -15,13 +15,13 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 2. Compile el programa del ejercicio anterior usando información de simbolos (con la flag -g). Al hacer esto se esta poniendo mas informacion en el ejecutable para permitir al debugger acceder a informacion util sobre los nombres de las variables y cosas similares. Ejecute el programa bajo el debugger digitando en consola (para el caso) ```gdb null``` y entonces una vez el ```gdb``` este corriendo ejecute ```run```. ¿Qué muestra gdb?
 
 - El programa recibió una señal SIGSEGV, es decir una Violación de Segmento.
-- la linea que hace referencia esta en la 10
+- La linea que hace referencia esta en la 10
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/02%20gdb%20run.png)
 
 3. Haga uso de la herramienta ```valgrind``` en el programa empleado en los puntos anteriores. Se usará la herramienta ```memcheck``` que es parte de ```valgrind``` para analizar lo que pasa: ``` valgrind --leak-check=yes null```. ¿Qué pasa cuando corre esto?, Â¿Puede usted interpretar la salida de la herramienta anterior?
 
--en este caso podemos observar la herramienta memcheck detectó una escritura inválida de tamaño 4 byte en la línea 8 del archivo 
+- En este caso podemos observar la herramienta memcheck detectó una escritura inválida de tamaño 4 bytes en la línea 8 del archivo 
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/03%20valgrind%20memcheck.png)
 
