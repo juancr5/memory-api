@@ -30,7 +30,7 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 -El codigo es el siguiente: [punto4.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto4.c)
 -Al ejecutar punto4.c la salida presentada fue:
 
-![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/04%20Valgrind.png)
+![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/04%20valgrind.png)
 
 -Donde se muestra que se hicieron 2 allocs y 1 Free es decir que falto desasignar el espacio de memoria asignada por la llamada a malloc.
 
