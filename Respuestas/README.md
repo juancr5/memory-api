@@ -28,7 +28,7 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 4. Escriba un programa sencillo que asigne memoria usando ```malloc()``` pero olvide liberarla antes de que el programa termina. ¿Qué pasa cuando este programa se ejecuta?, ¿Puede usted usar gdb para encontrar problemas como este?, ¿Que dice acerca de Valgrind (de nuevo use este con la bandera ```--leak check=yes```)?
 
 -El codigo es el siguiente: [punto4.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto4.c)
--Al ejecutar punto4.c la salida presentada fue:
+-Al ejecutar punto4.c la salida presentada con vagrind fue:
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/04%20valgrind.png)
 
@@ -36,17 +36,16 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 
 -Al usar el GDB la salida fue la siguiente:
 
-![alt tag]()
-
--En donde se presento un problema de segmentacion en ../stdlib/strtol_l.c:293
+![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/04%20gdb.png)
 
 -Al usar la bandera ```--leak check=yes``` se presenta lo siguiente: 
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/04%20tool.png)
 
-
-
 5. Escriba un programa que cree un array de enteros llamado data de un tamaño de 100 usando ```malloc```; entonces, lleve el ```data[100]``` a ```0```. ¿Qué pasa cuando este programa se ejecuta?, ¿Qué pasa cuando se corre el programa usando ```valgrind```?, ¿El programa es correcto?
+
+-El codigo es el siguiente: [punto5.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto5.c)
+-Al ejecutar punto5.c la salida presentada fue con el Valgrind fue la siguiente:
 
 6. Codifique un programa que asigne un array de enteros (como arriba), luego lo libere, y entonces intente imprimir el valor de un elemento del array. ¿El programa corre?, ¿Que pasa cuando hace uso de ```valgrind```?
 
