@@ -50,7 +50,8 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/05%20Free.png)
 
 -Despues se libero la memoria haciendo uso de free al llevar el vector a 0, la salida presentada muestra el siguiente error:
--ERROR SUMMARY: 100 errors from 1 contexts (suppressed: 0 from 0)
+-ERROR SUMMARY: 100 errors from 1 contexts (suppressed: 0 from 0).
+
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/05%20No%20Free.png)
 
 
