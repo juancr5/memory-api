@@ -44,8 +44,14 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 
 5. Escriba un programa que cree un array de enteros llamado data de un tamaño de 100 usando ```malloc```; entonces, lleve el ```data[100]``` a ```0```. ¿Qué pasa cuando este programa se ejecuta?, ¿Qué pasa cuando se corre el programa usando ```valgrind```?, ¿El programa es correcto?
 
--El codigo planteado para este: [punto5.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto5.c).
--Al ejecutar punto5.c liberando el malloc al final, la salida presentada fue con el Valgrind fue la siguiente:
+-El codigo planteado para resolver el ejercicio es: [punto5.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto5.c).
+
+-En el momento de llevar el arreglo a 0 se presento esto.
+
+6. Codifique un programa que asigne un array de enteros (como arriba), luego lo libere, y entonces intente imprimir el valor de un elemento del array. ¿El programa corre?, ¿Que pasa cuando hace uso de ```valgrind```?
+
+-El codigo planteado para este ejemplo: [punto6.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto6.c).
+-Al ejecutar punto5.c liberando la memoria asignada por malloc; la salida presentada haciendo uso del Valgrind fue la siguiente:
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/05%20Free.png)
 
@@ -53,9 +59,6 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 -ERROR SUMMARY: 100 errors from 1 contexts (suppressed: 0 from 0).
 
 ![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/05%20No%20Free.png)
-
-
-6. Codifique un programa que asigne un array de enteros (como arriba), luego lo libere, y entonces intente imprimir el valor de un elemento del array. ¿El programa corre?, ¿Que pasa cuando hace uso de ```valgrind```?
 
 7. Ahora pase un **funny value** para liberar (e.g. un puntero en la mitad del array que usted ha asignado) ¿Qué pasa?, ¿Ústed necesita herramientas para encontrar este tipo de problemas?
 
