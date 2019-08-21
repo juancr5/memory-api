@@ -53,15 +53,23 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 -El codigo planteado para este ejemplo: [punto6.c](https://github.com/juancr5/memory-api/blob/master/Respuestas/punto6.c).
 -Al ejecutar punto5.c liberando la memoria asignada por malloc; la salida presentada haciendo uso del Valgrind fue la siguiente:
 
-![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/05%20Free.png)
+![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/06%20Free.png)
+
+-Donde no se presento ningun error.
 
 -Despues se libero la memoria haciendo uso de free al llevar el vector a 0, la salida presentada muestra el siguiente error:
 -ERROR SUMMARY: 100 errors from 1 contexts (suppressed: 0 from 0).
 
-![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/05%20No%20Free.png)
+![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/06%20No%20Free.png
 
 7. Ahora pase un **funny value** para liberar (e.g. un puntero en la mitad del array que usted ha asignado) ¿Qué pasa?, ¿Ústed necesita herramientas para encontrar este tipo de problemas?
 
-8. Intente usar alguna de las otras interfaces para asignacion de memoria. Por ejemplo, cree una estructura de datos simple similar a un vector y que use rutinas que usen realloc para manejar el vector. Use un array para almacenar los elementos del vector; cuando un usuario agregue una entrada al vector, use realloc para asignar un espacio mas a este. ¿Que tan bien funciona el vector asi?, ¿Como se compara con una lista enlazada?, utilice ```valgrind``` para ayudarse en la busqueda de errores.
+-Al pasar un funny value en el codigo: [punto7.c]((https://github.com/juancr5/memory-api/blob/master/Respuestas/punto7.c).
+
+- Al ejecutar el codigo normalmente se presento un error de violacion de segmento y con la herramienta valgrind se mostraron mas errores de lo habitual. pero si necesitaramos usar otra herramienta para encontrar problemas usariamos el PurifyPlus que es otra herramienta para hacer debugger 
+
+![alt tag](https://github.com/juancr5/memory-api/blob/master/Respuestas/Imagenes/07%20Tools.png)
 
 9. Gaste mas tiempo y lea sobre el uso de gdb y valgrind. Conocer estas herramientas es critico; gaste el tiempo y aprenda como volverse un experto debugger en UNIX y C enviroment.
+
+- #Eso Es Justamente Lo Que Haremos# 
