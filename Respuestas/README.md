@@ -1,4 +1,4 @@
-## By Andres Alvares & Juan Camilo Rojas ## 
+## Realizado por: Andres Alvarez & Juan Camilo Rojas ## 
 
 # Memory API # 
 
