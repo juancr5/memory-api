@@ -1,4 +1,4 @@
-## Andres Alvares ## & ## Juan Camilo Rojas ## 
+## By Andres Alvares & Juan Camilo Rojas ## 
 
 # Memory API # 
 
