@@ -74,4 +74,4 @@ En este laboratorio ganará algún grado de familiaridad con la asignación de m
 
 9. Gaste mas tiempo y lea sobre el uso de gdb y valgrind. Conocer estas herramientas es critico; gaste el tiempo y aprenda como volverse un experto debugger en UNIX y C enviroment.
 
-- #Eso Es Justamente Lo Que Haremos# 
+#Eso Es Justamente Lo Que Haremos# 
